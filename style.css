@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+body{
+    font-size: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #122459 20.73%, #2F2ABF 80.1%, #433ED0 94.69%);
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    
+    height: 13%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+header > h1{
+    font-family: 'Carter One', cursive;
+    color: #D9D9D9;
+    font-size: 48pt;
+  
+}
+
+main{
+    border-top: 5px solid #D9D9D9;
+    margin-bottom: 1%;
+    height: 74%;
+}
+
+.players{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.player-espace{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-image > img {
+    padding: 10px;
+    width: 85px;
+    height: 85px;
+    max-width: 95%;
+    max-height: 95%;
+}
+.player-name{
+    font-family: 'Carter One', cursive;
+    color: #D9D9D9;
+    font-size: 24pt;
+    margin-bottom: 15px;
+}
+
+.tabuleiro{
+    background-image: url(imagens/Grid.svg); 
+    width: 352px;
+    height: 349px;
+    margin: auto;
+    
+}
+
+.container-tabuleiro{
+    height: 43%;
+}
+
+ 
+.space{
+    background-color: rgba(255, 0, 0, 0);
+    width: 33.3%;
+    height: 77.5%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.space > img{
+    width: 70%;
+    height: 70%;
+}
+
+.restart-game{
+    font-family: 'Carter One', cursive;
+    color: #D9D9D9;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 100%;
+    padding: 15px;
+}
+
+footer{
+    height: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Carter One', cursive;
+    color: #D9D9D9;
+    font-size: small;
+    border-top: 5px solid #D9D9D9;
+}
