@@ -62,13 +62,41 @@ function verificaVencedor(){
     if(vencedor=="X"){
         Swal.fire("the winner is "+"<img src='imagens/X.svg'>")
         gameover=true;
+        return;
     }   else if(vencedor=="O"){
         Swal.fire("The winner is "+"<img src='imagens/O.svg'>")
+        gameover=true;
+        return;
+    }
+
+    var spaces =document.getElementsByClassName("space");
+    var cont=0;
+    for(var i=0;i<spaces.length;i++){
+        if(spaces[i].getAttribute("play")==""){
+            cont=1;
+        }
+       
+    }
+    if(cont==0){
+        Swal.fire("Draw");
         gameover=true;
     }
 
 }
 
+
+function restart(){
+   var restarts=document.getElementById("restartgame");
+    restarts.addEventListener("click", function (){
+    var spaces =document.getElementsByClassName("space");
+    for(var i=0;i<spaces.length;i++){
+        spaces[i].innerHTML="";
+        spaces[i].setAttribute("play","");
+    }
+    gameover=false;
+    play=player1;
+});
+}
 
 
 
