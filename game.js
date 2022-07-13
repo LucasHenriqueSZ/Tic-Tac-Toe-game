@@ -60,11 +60,11 @@ function verificaVencedor(){
             vencedor=c3;
         }
     if(vencedor=="X"){
-        Swal.fire("the winner is "+"<img src='imagens/X.svg'>")
+        Swal.fire("Winner "+"<img src='imagens/X.svg'>")
         gameover=true;
         return;
     }   else if(vencedor=="O"){
-        Swal.fire("The winner is "+"<img src='imagens/O.svg'>")
+        Swal.fire("Winner "+"<img src='imagens/O.svg'>")
         gameover=true;
         return;
     }
